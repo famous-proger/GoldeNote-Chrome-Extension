@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/common/css/reset.css">
+    <link rel="stylesheet" href="assets/common/css/fonts.css">
+    <link rel="stylesheet" href="assets/popup/css/main.css">
+    <link rel="stylesheet" href="assets/popup/css/action.css">
+    <link rel="stylesheet" href="assets/common/css/blocks.css">
+</head>
+
+<body>
+
+
+    <!-- TEMPLATE FOR GOOGLE AUTHORIZATION SCREEN -->
+    <template id="auth-screen">
+        <section class="main-menu__google-auth">
+            <div class="main-menu__google-button">
+                <img src="assets/common/img/google.svg">
+                <h1>Sign in with Google</h1>
+            </div>
+        </section>
+    </template>
+    <!-- TEMPLATE FOR GOOGLE AUTHORIZATION SCREEN -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- TEMPLATE FOR MAIN SCREEN -->
+    <template id="main-screen">
+
+        <section class="main-menu__find-table-section">
+            <input type="text" placeholder="Enter table ID" id="input_table-id">
+            <input type="text" placeholder="Enter sheet name" id="input_sheet-name">
+            <button class="btn main-menu__btn_apply">Apply</button>
+            <button class="btn main-menu__btn_signout">Sign Out</button>
+        </section>
+
+        <section class="main-menu__new-note-section">
+            <div>
+                <textarea id="main-menu__note-title" maxlength="30" spellcheck="false"
+                    placeholder="My new Note"></textarea>
+                <textarea id="main-menu__note-description" spellcheck="false"
+                    placeholder="“Persistence is very important. You should not give up unless you are forced to give up.” – Elon Musk"></textarea>
+            </div>
+            <div>
+                <button class="btn" id="main-menu__add-new-button">Add new</button>
+                <time class="main-menu__note-date"></time>
+            </div>
+        </section>
+
+        <section class="main-menu__list-section">
+            <div class="main-menu__list"></div>
+            <div class="main-menu__single-note note__swipe_left">
+                <div class="main-menu__note-left">
+
+                    <div>
+                        <h1 class="main-menu__single-note__title">Title</h1>
+                        <p class="main-menu__single-note__description">Description</p>
+                    </div>
+
+                </div>
+
+                <div class="main-menu__note-right">
+                    <time class="main-menu__single-note__date">06.03.2020</time>
+                    <button class="btn main-menu__back-button"></button>
+                </div>
+            </div>
+        </section>
+
+    </template>
+    <!-- TEMPLATE FOR MAIN SCREEN -->
+
+
+
+
+
+
+    <!-- TEMPLATE FOR LIST ITEM -->
+    <template id="list-item-template">
+        <div class="main-menu__list-item">
+            <time class="main-menu__item-date">06.03.2020</time>
+            <p class="main-menu__item-title"></p>
+            <button class="btn main-menu__copy-button"></button>
+            <button class="btn main-menu__delete-button"></button>
+        </div>
+    </template>
+    <!-- TEMPLATE FOR LIST ITEM -->
+
+
+
+
+
+
+
+    <!-- 
+    <main class="full-page"> -->
+    <!-- <div class="full-page__inner"> -->
+    <div class="main-menu">
+
+
+    </div>
+    <!-- </div> -->
+    <!-- </main> -->
+
+
+    <script src="assets/common/js/functions.js" defer></script>
+    <script src="assets/common/js/constants.js" defer></script>
+    <script src="assets/popup/js/save-data.js" defer></script>
+    <script src="assets/popup/js/add-new-note.js" defer></script>
+    <script src="assets/popup/js/delete-note.js" defer></script>
+
+
+    <script src="assets/popup/js/open-note.js" defer></script>
+    <script src="assets/popup/js/add-list-item.js" defer></script>
+    <script src="assets/popup/js/signout.js" defer></script>
+    <script src="assets/popup/js/get-element.js" defer></script>
+
+
+    <script src="assets/popup/js/build-auth-screen.js" defer></script>
+    <script src="assets/popup/js/connect-to-sheet.js" defer></script>
+
+
+    <!-- TRIGGER ALL THE REST SCRIPTS -->
+    <script src="assets/popup/js/launch-all.js" defer></script>
+</body>
+
+</html>

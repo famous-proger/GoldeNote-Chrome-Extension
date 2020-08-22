@@ -1,0 +1,29 @@
+{
+    "name": "GoldeNote",
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqSy6f6kbSIYAhiD7xIIOZqJg1gakk5cYp0Xi+/BDMwgK4xPzC3029p9H5SuqM659hncZ0q6bZGhC6ZgkkBgg3Q4RnFwFm6iEva7+rngPDPdz7bAkSUbMIGQPpraBRLQaoTf99EPe3oiy0uMb54sXF9z4qROjEMxRAPLmZZG5jaTCYeRBRdJZrLMPmrCnrsUI3x69XNlB82Js+SLhmLxaQUw3F19Hk442f8ASkaqohjpd/gjLOLa7CzBOYj36udWHZi/6M1RE+wpkAtyuY3cN0brFVmvM7udy4h/3j7om7ywQDvuCht0qNyZX1ZOchWL5EAnQZp8STbXewSCgyx+dawIDAQAB",
+    "version": "1.0.0",
+    "description": "This extension will help You to save data from Your browser to Google Sheets",
+    "icons": {
+        "128": "assets/common/img/note128.png",
+        "64": "assets/common/img/note64.png",
+        "24": "assets/common/img/note24.png",
+        "16": "assets/common/img/note16.png"
+    },
+    "permissions": [
+        "identity",
+        "storage"
+    ],
+    "oauth2": {
+        "client_id": "364035604785-gm4orr51v0l79kt4fq0s0q8tgqq1i0h7.apps.googleusercontent.com",
+        "scopes": [
+            "https://www.googleapis.com/auth/spreadsheets"
+        ]
+    },
+    "browser_action": {
+        "default_icon": "assets/common/img/note128.png",
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2,
+    "options_page": "options.html",
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://apis.google.com/; object-src 'self'"
+}

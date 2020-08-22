@@ -1,0 +1,9 @@
+.btn {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+input, textarea, button {
+  outline: none;
+}

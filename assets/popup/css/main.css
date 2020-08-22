@@ -1,0 +1,363 @@
+/* body,
+html {
+  width: 100%;
+  height: 100%;
+} */
+/*
+.full-page {
+  width: 1920px;
+  height: 100%;
+  min-height: 900px;
+  box-sizing: border-box;
+  background: url(../../common/img/bg1.jpg) center center / cover no-repeat;
+}
+
+.full-page__inner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+} */
+
+.main-menu {
+  width: 745px;
+  height: 600px;
+  padding: 18px 26px 0px 25px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+.main-menu__find-table-section {
+  width: 100%;
+  height: 75px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 10px;
+  padding: 21px 22px 21px 22px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 0px #00000036;
+  background: #fff;
+}
+
+.main-menu__find-table-section > input:nth-of-type(1) {
+  width: 270px;
+  height: 33px;
+  box-sizing: border-box;
+}
+
+.main-menu__btn_apply {
+  width: 69px;
+  height: 33px;
+  background: #757fd9;
+  font: 20px / 20px "Roboto Light";
+  color: #fff;
+  transition: box-shadow 0.4s ease;
+}
+
+.main-menu__btn_apply:hover {
+  box-shadow: 0 0 10px 4px #757fd9ba;
+  transition: box-shadow 0.2s ease;
+}
+
+.main-menu__btn_signout {
+  width: 108px;
+  height: 33px;
+  background: #757fd9;
+  font: 20px / 20px "Roboto Light";
+  color: #fff;
+  transition: box-shadow 0.2s ease;
+}
+
+.main-menu__btn_signout:hover {
+  box-shadow: 0 0 10px 4px #757fd9ba;
+  transition: box-shadow 0.2s ease;
+}
+
+.main-menu__new-note-section {
+  width: 100%;
+  height: 230px;
+  margin-top: 19px;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 19px 32px 19px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px 0px #00000036;
+  background: #fff;
+}
+
+.main-menu__new-note-section > div:nth-of-type(1),
+.main-menu__new-note-section > div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-menu__new-note-section > div:nth-of-type(1) {
+  height: 100%;
+  width: 527px;
+  box-sizing: border-box;
+  padding: 22px 25px 22px 25px;
+  background: #efefef;
+}
+
+.main-menu__new-note-section > div:nth-of-type(1) > textarea:nth-of-type(1) {
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  border: none;
+  resize: none;
+  font: 900 20px / 30px "Roboto Light";
+}
+
+.main-menu__new-note-section > div:nth-of-type(1) > textarea:nth-of-type(2) {
+  width: 100%;
+  height: 96px;
+  flex: 1 1 1px;
+  box-sizing: border-box;
+  border: none;
+  margin-top: 10px;
+  background: transparent;
+  resize: none;
+  font: 15px / 20px "Roboto Light";
+}
+
+.main-menu__new-note-section > div:nth-of-type(2) > button:nth-of-type(1) {
+  width: 108px;
+  height: 33px;
+  background: #757fd9;
+  font: 20px / 20px "Roboto Light";
+  color: #fff;
+  transition: box-shadow 0.2s ease;
+}
+
+.main-menu__new-note-section
+  > div:nth-of-type(2)
+  > button:nth-of-type(1):hover {
+  box-shadow: 0 0 10px 4px #757fd9ba;
+  transition: box-shadow 0.2s ease;
+}
+
+.main-menu__new-note-section > div:nth-of-type(2) > time:nth-of-type(1) {
+  width: 108px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background: #efefef;
+  font: 20px / 20px "Roboto Light";
+  color: #000;
+}
+
+.main-menu__list-section {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 25px;
+  padding: 25px 21px 22px 22px;
+  border-radius: 5px;
+  overflow-x: hidden;
+  box-shadow: 0px 0px 15px 0px #00000036;
+  background: #fff;
+}
+
+.main-menu__list {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: start;
+  grid-row-gap: 10px;
+  overflow-y: auto;
+}
+
+.main-menu__list-item {
+  display: flex;
+  height: 25px;
+}
+
+.main-menu__list-item > time:nth-of-type(1) {
+  width: 108px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #efefef;
+  font: 20px / 20px "Roboto Light";
+  color: #000;
+}
+
+.main-menu__list-item > p:nth-of-type(1) {
+  width: 380px;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Light";
+  background: #efefef;
+  cursor: pointer;
+}
+
+.main-menu__list-item > p:nth-of-type(1):hover {
+  background: #757fd9;
+}
+
+.main-menu__list-item > button {
+  width: 33px;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.main-menu__list-item > button:nth-of-type(1) {
+  background: url(../../common/img/doc.svg) center center / auto 100% no-repeat;
+}
+
+.main-menu__list-item > button:nth-of-type(2) {
+  background: url(../../common/img/delete.svg) center center / auto 100%
+    no-repeat;
+}
+
+.main-menu__list-item > *:not(:last-child) {
+  margin-right: 22px;
+}
+
+.main-menu__list-item > button:nth-of-type(1) {
+  margin-right: 10px;
+}
+
+.main-menu__single-note {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 20px 14px 0px 30px;
+  box-sizing: border-box;
+  background: #fff;
+  transition: left 0.6s ease;
+}
+
+.main-menu__note-left {
+  display: flex;
+  flex-direction: column;
+  width: 525px;
+  height: 178px;
+  position: relative;
+}
+
+.main-menu__note-left::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: #efefef;
+}
+
+.main-menu__note-left::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: #efefef;
+}
+
+.main-menu__note-left > div:nth-of-type(1) {
+  height: 100%;
+  padding: 20px 20px 20px 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  background: #efefef;
+}
+
+.main-menu__single-note__title {
+  font: 900 20px / 30px "Roboto Light";
+}
+
+.main-menu__note-left > div:nth-of-type(1) > p:nth-of-type(1) {
+  margin-top: 10px;
+  font: 15px / 20px "Roboto Light";
+}
+
+.main-menu__note-left > p:nth-of-type(1) {
+  margin-top: 15px;
+  background: #757fd9;
+  color: #fff;
+}
+
+.main-menu__note-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-menu__note-right > time:nth-of-type(1) {
+  width: 108px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #efefef;
+  font: 20px / 20px "Roboto Light";
+  color: #000;
+}
+
+.main-menu__note-right > button:nth-of-type(1) {
+  width: 45px;
+  height: 45px;
+  margin-top: 15px;
+  align-self: flex-end;
+  border-radius: 25px;
+  background: url(../../common/img/back.svg) center center / 75% auto no-repeat,
+    #757fd9;
+  cursor: pointer;
+  transition: box-shadow 0.4s ease;
+}
+
+.main-menu__note-right > button:nth-of-type(1):hover {
+  box-shadow: 0 0 10px 4px #757fd9ba;
+  transition: box-shadow 0.2s ease;
+}
+
+.main-menu__google-auth {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-menu__google-button {
+  width: 379px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+
+.main-menu__google-button > img:nth-of-type(1) {
+  width: 47px;
+  height: 47px;
+  margin-left: 10px;
+}
+
+.main-menu__google-button > h1:nth-of-type(1) {
+  margin-left: 30px;
+  font: 20px / 25px "Roboto Light";
+}
